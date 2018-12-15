@@ -7,7 +7,7 @@ From authors_controller, before nesting Post resource in routes.rb
 #   @posts = @author.posts
 #   render template: 'posts/index'
 # end
-# 
+#
 # def post
 #   @author = Author.find(params[:id])
 #   @post = Post.find(params[:post_id])
@@ -230,7 +230,7 @@ In `posts/index.html.erb`, we already show the author's name, so let's add a lin
   ...
 
   <h2><%= post.title %></h2>
-  
+
   <!-- change the name to a link -->
   <h3>by: <%= link_to post.author.name, author_posts_path(post.author) %></h3>
   <p><%= post.description %></p>
